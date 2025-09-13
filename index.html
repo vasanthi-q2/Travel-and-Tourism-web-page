@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel & Tourism</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Explore the World</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Discover New Places</h2>
+    <p>Plan your next adventure with us</p>
+    <!-- Fixed: Added class and corrected image -->
+    <button class="book-btn" onclick="showMessage()"></button>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/paris.jpg" alt="Paris">
+        <h3>Paris</h3>
+        <p>The city of lights and love.</p>
+      </div>
+      <div class="card">
+        <img src="images/maldives.jpg" alt="Maldives">
+        <h3>Maldives</h3>
+        <p>Relax in the tropical paradise.</p>
+      </div>
+      <div class="card">
+        <img src="images/newyork.jpg" alt="New York">
+        <h3>New York</h3>
+        <p>The city that never sleeps.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="galleryimages/beach.jpg" alt="Beach">
+      <img src="galleryimages/mountains.jpg" alt="Mountains">
+      <img src="galleryimages/desert.jpg" alt="Desert">
+      <img src="galleryimages/forest.jpg" alt="Forest">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="return submitForm()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Travel & Tourism | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
